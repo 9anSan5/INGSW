@@ -1,0 +1,50 @@
+----------------------------------------------
+Schema specifiche:
+
+Back-office:
+gli operatori del back-office si occupano di:
+- registrazione utenti (gestione dati con db, operazioni di CRUD)
+- gestione ingiunzioni:
+	creazione: 
+		necessita di inserimento dati (persona, anno di competenza, letture dati inviati dai tecnici).
+	modifica/eliminazione:
+		solo se non emessa.
+	archiviazione:
+		solo se pagata
+	sospensione:
+		"In presenza di un’opposizione, l’ingiunzione viene sospesa." <------- ?????
+- emissione ingiunzione di pagamento:
+	stampa: 
+		necessita di numero di protocollo dell'ingiunzione. 
+		Può essere fatta solo se un'ingiunzione non è stata ancora emessa.
+		NB: un'ingiunzione emessa non può essere cancellata, ma solo aggiornata. Una volta pagata viene archiviata.
+Un admin del back-office si deve occupare di:
+- gestione operatori
+- specifiche costo per metrocubo, IVA		
+- ammontare spese di spedizione 	<-------- ?????
+Il sistema Back-office deve permettere una notifica di ricezione delle ingiunzioni emesse.
+
+Client dei tecnici:
+- recupero dati dai contatori.
+
+----------------------------------------------
+Requisiti funzionali:
+
+Back-office deve effettuare tali operazioni:
+- registrazione utente (anagrafica, recapito, metodo di ricezione ingiunzione). 
+  Deve permettere la registrazione di persone fisiche e giuridiche (aziende).
+- registrazione operatore/admin con relativi permessi di accesso ai moduli del sistema (quindi, autenticazione operatore/admin).
+- creazione di un'ingiunzione (con i dati inviati dagli operatori) ed emissione di un numero di protocollo 
+  identificativo dell'ingiunzione.
+	(chi crea un'ingiunzione? 
+   Solo un operatore o anche un admin?)
+- dato un numero di protocollo, si deve poter risalire a qualsiasi ingiunzione per permettere la visione/modifica/eliminazione.
+- dato un numero di protocollo, si deve poter stampare (se non è stato ancora fatto) un'ingiunzione.
+- un admin può gestire gli operatori (inserimento/modifica dati/eliminazione), il costo per metrocubo, l'IVA.
+- notifica di ricezione ingiunzione. Se un ingiunzione non è stata recapitata (causa, ad esempio, indirizzo errato), verrà
+  notificato al sistema e deve permettere un reinserimento dei dati e quindi la riemissione.
+  (come deve avvenire la notifica di ricezione? 
+  Via email in ogni caso (tipo, contrassegno di lettura)?
+    Nel caso di ingiunzione cartacea, l'ente (posta, corriere o chiunque altro possa farlo) potrebbe notificarlo lo stesso via mail.
+  Se cartacea, raccomandata con ricevuta di ritorno?
+  Sarebbe più comodo gestire tutto via email..)
