@@ -12,7 +12,7 @@ gli operatori del back-office si occupano di:
 	archiviazione:
 		solo se pagata
 	sospensione:
-		"In presenza di un’opposizione, l’ingiunzione viene sospesa." <------- ?????
+		"In presenza di un’opposizione, l’ingiunzione viene sospesa."
 - emissione ingiunzione di pagamento:
 	stampa: 
 		necessita di numero di protocollo dell'ingiunzione. 
@@ -21,7 +21,7 @@ gli operatori del back-office si occupano di:
 Un admin del back-office si deve occupare di:
 - gestione operatori
 - specifiche costo per metrocubo, IVA		
-- ammontare spese di spedizione 	<-------- ?????
+- ammontare spese di spedizione
 Il sistema Back-office deve permettere una notifica di ricezione delle ingiunzioni emesse.
 
 Client dei tecnici:
