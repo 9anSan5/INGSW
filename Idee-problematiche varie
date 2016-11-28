@@ -1,0 +1,8 @@
+-	Politica aggiornamenti
+-	Gestione data center (locale o remoto? Il server è in locale o si appoggia ad un servizio esterno?)
+-	Assenza da lavoro di un operatore (il lavoro viene completato al rientro oppure viene smistato tra i vari operatori presenti?)
+-	In assenza di connessione, tutto ciò che viene emesso verrà messo in coda di attesa fino al ripristino della connessione
+-	Associare ogni bolletta/ingiunzioni ad un operatore (così da poter tener traccia del lavoro ed evitare che due operatori lavorino sulla stessa bolletta)
+-	Divisione equa del lavoro ad aggiornamento del database
+-	Comunicazione di assenza servizio
+-	Sezione comunicazione operatore-admin
