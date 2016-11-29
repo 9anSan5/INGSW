@@ -17,8 +17,17 @@ DOMANDE
 PROPOSTE
 - E' possibile riassumere l'impostazione di massima del prodotto offerto con i seguenti punti:
 -- Una volta installato e pronto all'utilizzo il sistema quotidianamente (in orario non lavorativo) effettua un controllo sui dati presenti
-   e genera per ogni operatore la propria coda di bollette e ingiunzioni che dovrà smistare (lavoro giornaliero). La generazione
-   del "lavoro" da smistare è gestibile dall'admin si sistema.
+   e genera per ogni operatore la propria coda di bollette e ingiunzioni che dovrà approvare (lavoro giornaliero). 
+--La gestione della generazione del "lavoro" da smistare è demandata all'admin di sistema che, oltre a poter settare il costo dell'acqua,
+  la mora da applicare alle ingiunzioni, può, tramite il file di log generato in automatico quotidianamente, tener traccia di 
+  qualsiasi operazione di accesso e modifica ai dati da parte degli operatori.
+--Gli operatori, dopo aver effettuato l'operazione di login, avranno la possibilità di visionare il lavoro da svolgere (tramite 
+  la coda di bollette e quella di ingiunzioni) e procedere all'approvazione dei documenti da emettere, col sussidio di una sezione
+  apposita per le varie operazioni di CRUD.
+--La gestione dei pagamenti e l'invio di documenti (cartacei) è affidato a ditte esterne, mentre la comunicazione via mail è
+  garantita dal nostro software.
+
+
 -	Associare ogni bolletta/ingiunzioni ad un operatore (così da poter tener traccia del lavoro ed evitare che due operatori
   lavorino sulla stessa bolletta)
 -	Assenza da lavoro di un operatore (il lavoro viene completato al rientro oppure viene smistato tra i vari operatori presenti?)
